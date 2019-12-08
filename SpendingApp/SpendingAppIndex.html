@@ -6,16 +6,66 @@
 
 <meta charset="utf-8" />
 
-<title>Code Camp Git</title>
+<title>Tony Tracker</title>
 
-</head>
+<link rel="stylesheet" href="SpendingAppStylesheet.CSS" type="text/css"></link>
 
-<body>
+    <body>
+        <p class=header >Tony Tracker</p>
+    <form>
+    <nav>
+        <a class=links href="reports">Reports</a>
+        <a class=links href="transactions">Transactions</a>
+        <a class=links href="recurring-expenses">Recurring Expenses</a>
+    </nav>   <br> 
 
-<p>some regular text</p>
+    <input type="radio" name="date" value="today" class="spending-input">Today</input><br>
+    <input type="radio" name="date" value="another-date" class="spending-input">Another Date:</input><br><br>
 
-<p>some regular text 1</p>
+    <button type="button" class="spending-input">-1 Day</button>
+    <button type="button" class="spending-input">-1 Week</button><br>
+    <button type="button" class="spending-input">+1 Day</button>
+    <button type="button" class="spending-input">+1 Week</button><br>
 
-</body>
+    <p></p>
+
+    <p class="spending-input">Enter Transaction</p>
+    <input type="radio" name="currency" value="$" class="spending-input">$</input>
+    <input type="radio" name="currency" value="฿" class="spending-input">฿</input><br>
+
+    <input type="number" name="transAmt" class="spending-input"><br>
+    <select class="spending-input">
+        <option value="select-category">Select Category:</option>
+        <option value="rent">Rent</option>
+        <option value="groceries">Groceries</option>
+        <option value="eating-out">Eating Out</option>
+        <option value="swimming">Swimming and Workout</option>
+        <option value="media">Books, Movies, and Music</option>
+        <option value="laundry">Laundry</option>
+        <option value="phone">Phone</option>
+        <option value="data">Data and Internet</option>
+        <option value="clothes">Clothes</option>
+        <option value="tech">Tech and Computer</option>
+        <option value="camera">Camera Stuff</option>
+        <option value="motorcycle">Motorcycle Stuff</option>
+        <option value="gas">Gas</option>
+        <option value="bicycle">Bicycle Stuff</option>
+        <option value="visa">Visa and Immigration</option>
+        <option value="massage">Massage</option>
+        <option value="health">Health and Hospital</option>
+        <option value="school">School Stuff</option>
+        <option value="consulting">Consulting Services</option>
+        <option value="travel">Travel</option>
+        <option value="transport">Local Transportation</option>
+        <option value="electricity">Electricity</option>
+        <option value="water">Water</option>
+        <option value="other">Other Expenses (specify below)</option>
+    </select><br><br>
+    <label for="notes">Notes:</label><br>
+    <input type="text" name="notes" class="spending-input"></input><br><br>
+
+    <button type="submit" class="spending-input">Enter Transaction</button>
+    </form>
+    </body>
 
 </html>
